@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1658278299 source:c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\dominios.cpp
+	"dominios.h"
+
+1658276952 c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\dominios.h
+	<string>
+	<stdexcept>
+
+1658272265 source:c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\entidades.cpp
+	"entidades.h"
+
+1658277493 c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\entidades.h
+	"dominios.h"
+	<string>
+
+1658272916 source:c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\main.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"testes.h"
+
+1658277665 c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\testes.h
+	<string>
+	"dominios.h"
+	"entidades.h"
+
+1658270652 source:c:\users\hamilton gomes\desktop\trab. 1 tp1\trab. 1\testes.cpp
+	"testes.h"
+
+1658278300 source:c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\dominios.cpp
+	"dominios.h"
+
+1658276954 c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\dominios.h
+	<string>
+	<stdexcept>
+
+1658272266 source:c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\entidades.cpp
+	"entidades.h"
+
+1658277494 c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\entidades.h
+	"dominios.h"
+	<string>
+
+1658272918 source:c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\main.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"testes.h"
+
+1658277666 c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\testes.h
+	<string>
+	"dominios.h"
+	"entidades.h"
+
+1658270654 source:c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\testes.cpp
+	"testes.h"
+
