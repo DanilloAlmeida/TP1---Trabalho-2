@@ -212,7 +212,7 @@ void Email::validarEmail(string emailEntrada)
 
         }
     }
-// FIM VALIDA CARACTERES  PERMITIDOS: a-z, A-Z, 0-9, " ", -, . --------------------
+// FIM VALIDA CARACTERES  PERMITIDOS: a-z, A-Z, 0-9, " ", -, . ------------------
 
 // VALIDA @ ---------------------------------------------------------------------
     for (int i=0; i<tamanhoEmail ; i++)
@@ -372,9 +372,9 @@ void Nome::validarNome(string nomeEntrada)
         }
     }
 
-    /* FIM VALIDA CARACTERE INVALIDO --------------------------------------------- */
+    /* FIM VALIDA CARACTERE INVALIDO ----------------------------------------- */
 
-    /* VALIDA PRIMEIRO CARACTERE MAIUSCULO --------------------------------------- */
+    /* VALIDA PRIMEIRO CARACTERE MAIUSCULO ----------------------------------- */
     achouValido="nao";
     for (int i = 0; i<36; i++)
     {
@@ -427,9 +427,9 @@ void Nome::validarNome(string nomeEntrada)
             }
         }
     }
-    /* FIM VALIDA CARACTERE MAIUSCULO EM SOBRENOME ------------------------------- */
+    /* FIM VALIDA CARACTERE MAIUSCULO EM SOBRENOME --------------------------- */
 
-    /* VALIDA CARACTERE MAIUSCULO NO RESTO DO NOME ------------------------------- */
+    /* VALIDA CARACTERE MAIUSCULO NO RESTO DO NOME --------------------------- */
     for (int i = 1; i<tamanhoNome; i++)
     {
         if(nomeEntrada[i] == ' '
@@ -463,9 +463,9 @@ void Nome::validarNome(string nomeEntrada)
             ("Argumento invalido: RESTO NOME CONTEM MAIUSCULO");
         }
     }
-    /* FIM VALIDA CARACTERE MAIUSCULO NO RESTO DO NOME --------------------------- */
+    /* FIM VALIDA CARACTERE MAIUSCULO NO RESTO DO NOME ----------------------- */
 
-    /* VALIDA CARACTERE MAIUSCULO NO RESTO DO SOBRENOME -------------------------- */
+    /* VALIDA CARACTERE MAIUSCULO NO RESTO DO SOBRENOME ---------------------- */
     for (int i = 1; i<tamanhoNome; i++)
     {
         if(nomeEntrada[i] == ' '

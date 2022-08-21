@@ -55,3 +55,54 @@
 1658270654 source:c:\users\danil\downloads\t1-tp1-180098845-221004034-190131497\trab. 1 tp1\trab. 1\testes.cpp
 	"testes.h"
 
+1661023902 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\entidades.cpp
+	"entidades.h"
+
+1661023902 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\entidades.h
+	"dominios.h"
+	<string>
+
+1661023902 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\dominios.h
+	<string>
+	<stdexcept>
+
+1661081792 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\main.cpp
+	<iostream>
+	"dominios.h"
+	"interfaces.h"
+	"controladoras.h"
+	"stubs.h"
+
+1661023902 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\testes.h
+	<string>
+	"dominios.h"
+	"entidades.h"
+
+1661023902 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\testes.cpp
+	"testes.h"
+
+1661024332 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\dominios.cpp
+	"dominios.h"
+
+1661080033 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.cpp
+	"controladoras.h"
+
+1661080354 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.h
+	"interfaces.h"
+	"dominios.h"
+	<stdexcept>
+	<iostream>
+
+1661081967 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\interfaces.h
+	"dominios.h"
+	<stdexcept>
+
+1661080782 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.cpp
+	"stubs.h"
+
+1661081967 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.h
+	"Interfaces.h"
+	<stdexcept>
+	<iostream>
+	<typeinfo>
+
