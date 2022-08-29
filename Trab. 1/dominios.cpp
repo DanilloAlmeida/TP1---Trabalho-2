@@ -299,7 +299,7 @@ void Email::validarEmail(string emailEntrada)
 // FIM VALIDA DOMINIO -----------------------------------------------------------
 void Email::setEmail (string emailEntrada)
 {
-    //validarEmail(emailEntrada);
+    validarEmail(emailEntrada);
     this->email=emailEntrada;
 }
 
@@ -630,7 +630,7 @@ void Senha::validarSenha(string senhaEntrada)
 
 void Senha::setSenha(string senhaEntrada)
 {
-    //validarSenha(senhaEntrada);
+    validarSenha(senhaEntrada);
     this->senha = senhaEntrada;
 }
 
