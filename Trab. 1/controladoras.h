@@ -22,3 +22,4 @@ void inline CntrIUAutenticacao::setCntrLNAutenticacao(ILNAutenticacao *cntrLNAut
 }
 /*    FIM DE DECLARAÇÃO - AUTENTICACAO ########################################*/
 #endif // CONTROLADORAS_H_INCLUDED
+
