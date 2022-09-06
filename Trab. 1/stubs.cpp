@@ -1,21 +1,87 @@
 #include "stubs.h"
 
-const int StubLNAutenticacao::TRIGGER_FALHA;
-const int StubLNAutenticacao::TRIGGER_ERRO_SISTEMA;
 
 /* INICIO DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
 //bool StubLNAutenticacao::autenticar(const Email &email, const Senha &senha){
-bool StubLNAutenticacao::autenticar(Email &email, Senha &senha){
-    cout << endl << "StubLNAutenticacao::autenticar" << endl;
+bool StubISAutenticacao::autenticar(Email &email, Senha &senha){
+    cout << endl << "StubISAutenticacao::autenticar" << endl;
     cout << "Email...: " << email.getEmail() << endl;
     cout << "Senha...: " << senha.getSenha() << endl;
 
+    bool resultado = true;
+
+    switch(email.getEmail()){
+        case TRIGGER_FALHA:
+            resultado = false;
+            break;
+        case TRIGGER_ERRO_SISTEMA:
+            throw runtime_error("Erro de sistema");
+    }
+    return resultado;
+}
+/*    FIM DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
+
+
+/* INICIO DA IMPLEMENTACAO DE METODOS - USUARIO ###############################*/
+
+bool StubISUsuario::incluir(const Usuario &usuario){
+    cout << endl << "StubISUsuario::incluir" << endl;
+
+    bool resultado = true;
+
+    switch(usuario.getEmail()){
+        case TRIGGER_FALHA:
+            resultado = false;
+            break;
+        case TRIGGER_ERRO_SISTEMA:
+            throw runtime_error("Erro de sistema");
+    }
+    return resultado;
+}
+/* ----------------------------------------------------------------------------*/
+bool StubISUsuario::remover(const Email &email){
+    cout << endl << "StubISUsuario::email" << endl;
+
+    bool resultado = true;
+
+    switch(email.getEmail()){
+        case TRIGGER_FALHA:
+            resultado = false;
+            break;
+        case TRIGGER_ERRO_SISTEMA:
+            throw runtime_error("Erro de sistema");
+    }
+    return resultado;
+}
+/* ----------------------------------------------------------------------------*/
+bool StubISUsuario::pesquisar(Usuario &usuario){
+    cout << endl << "StubISUsuario::pesquisar" << endl;
+
+    bool resultado = true;
+
     // switch(email.getEmail()){
     //     case TRIGGER_FALHA:
-    //         return false;
+    //         resultado = false;
+    //         break;
     //     case TRIGGER_ERRO_SISTEMA:
     //         throw runtime_error("Erro de sistema");
     // }
-    return true;
+    return resultado;
 }
-/*    FIM DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
+/* ----------------------------------------------------------------------------*/
+bool StubISUsuario::editar(const Usuario &usuario){
+    cout << endl << "StubISUsuario::editar" << endl;
+
+    bool resultado = true;
+
+    // switch(email.getEmail()){
+    //     case TRIGGER_FALHA:
+    //         resultado = false;
+    //         break;
+    //     case TRIGGER_ERRO_SISTEMA:
+    //         throw runtime_error("Erro de sistema");
+    // }
+    return resultado;
+}
+/* ----------------------------------------------------------------------------*/
+/*    FIM DA IMPLEMENTACAO DE METODOS - USUARIO ###############################*/

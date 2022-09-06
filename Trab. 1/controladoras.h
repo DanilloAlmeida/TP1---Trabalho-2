@@ -9,17 +9,38 @@
 using namespace std;
 
 /* INICIO DE DECLARAÇÃO - AUTENTICACAO ########################################*/
-class CntrIUAutenticacao:public IUAutenticacao{
+class CntrIAAutenticacao:public IAAutenticacao{
 private:
-    ILNAutenticacao *cntrLNAutencicacao;
+    ISAutenticacao *cntrISAutencicacao;
 public:
     bool autenticar(Email*);
-    void setCntrLNAutenticacao(ILNAutenticacao*);
+    void setCntrISAutenticacao(ISAutenticacao*);
 };
 
-void inline CntrIUAutenticacao::setCntrLNAutenticacao(ILNAutenticacao *cntrLNAutencicacao){
-    this->cntrLNAutencicacao = cntrLNAutencicacao;
+void inline CntrIAAutenticacao::setCntrISAutenticacao(ISAutenticacao *cntrISAutencicacao){
+    this->cntrISAutencicacao = cntrISAutencicacao;
 }
 /*    FIM DE DECLARAÇÃO - AUTENTICACAO ########################################*/
+/* INICIO DE DECLARAÇÃO - USUARIO #############################################*/
+class CntrIAUsuario:public IAUsuario{
+private:
+    const static int INCLUIR   = 1;
+    const static int REMOVER   = 2;
+    const static int PESQUISAR = 3;
+    const static int EDITAR    = 4;
+    const static int RETORNAR  = 5;
+
+    ISUsuario *cntrISUsuario;
+public:
+    void executar(const Email);
+    void setCntrISUsuario(ISUsuario *);
+};
+
+inline void CntrIAUsuario::setCntrISUsuario(ISUsuario *CntrIAUsuario){
+    this->cntrISUsuario = cntrISUsuario;
+}
+
+
+/*    FIM DE DECLARAÇÃO - USUARIO #############################################*/
 #endif // CONTROLADORAS_H_INCLUDED
 

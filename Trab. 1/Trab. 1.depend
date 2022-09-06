@@ -81,7 +81,7 @@
 1661023902 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\testes.cpp
 	"testes.h"
 
-1661122588 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\dominios.cpp
+1661814649 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\dominios.cpp
 	"dominios.h"
 
 1661122268 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.cpp
@@ -93,8 +93,9 @@
 	<stdexcept>
 	<iostream>
 
-1661122268 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\interfaces.h
+1662471453 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\interfaces.h
 	"dominios.h"
+	"entidades.h"
 	<stdexcept>
 
 1661122268 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.cpp
@@ -105,4 +106,15 @@
 	<stdexcept>
 	<iostream>
 	<typeinfo>
+
+1662470440 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\comandos.cpp
+	"comandos.h"
+
+1661854461 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\comandos.h
+	"interfaces.h"
+	"dominios.h"
+	"entidades.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
 

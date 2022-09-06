@@ -7,11 +7,13 @@
  * @author Danillo Danie da Costa Almeida
  * @author Thiago Pereira de Castro
  */
-
+#include <stdexcept>
 #include <iostream>
+#include <string>
+
 
 #include "dominios.h"
-//#include "entidades.h"
+#include "entidades.h"
 //#include "testes.h"
 #include "interfaces.h"
 #include "controladoras.h"
@@ -21,10 +23,20 @@ using namespace std;
 
 int main()
 {
-    IUAutenticacao *cntrIUAutenticacao = new CntrIUAutenticacao();
-    ILNAutenticacao *stubLNAutenticacao = new StubLNAutenticacao();
+    IAAutenticacao  *cntrIAAutenticacao;
+    IAUsuario       *cntrIAUsuario;
 
-    cntrIUAutenticacao->setCntrLNAutenticacao(stubLNAutenticacao);
+    cntrIAAutenticacao = new CntrIAAutenticacao();
+    cntrIAUsuario      = new CntrIAUsuario();
+
+    ISAutenticacao *stubISAutenticacao;
+    ISUsuario      *stubISUsuario;
+
+    stubISAutenticacao = new StubISAutenticacao();
+    stubISUsuario      = new StubISUsuario();
+
+    cntrIAAutenticacao->setCntrISAutenticacao(stubISAutenticacao);
+    cntrIAUsuario->setCntrISUsuario(stubISUsuario);
 
     bool resultado;
 
@@ -34,24 +46,32 @@ int main()
         cout << endl << "Tela inicial de sistema." << endl;
 
         try{
-            resultado = cntrIUAutenticacao->autenticar(&email);
+            resultado = cntrIAAutenticacao->autenticar(&email);
+            if (resultado){
+                cout << endl << "Sucesso autenticacao. " << endl;
+                cout << endl << "Email ....: " << email.getEmail() << endl;
+                break;
+            }
+            else{
+                cout << endl << "Erro autenticacao. " << endl;
+                break;
+            }
         }
         catch(const runtime_error &exp){
             cout << "Erro de sistema. " << endl;
             break;
         }
-
-        if (resultado){
-            cout << endl << "Sucesso autenticacao. " << endl;
-            cout << endl << "Email ....: " << email.getEmail() << endl;
-            break;
-        }
-        else{
-            cout << endl << "Erro autenticacao. " << endl;
-            break;
-        }
     }
-    delete cntrIUAutenticacao;
-    delete stubLNAutenticacao;
+
+    try{
+        CntrIAUsuario->executar(email);
+    }
+    catch(const runtime_error &exp){
+        cout << "Erro de sistema" << endl;
+    }
+    delete cntrIAAutenticacao;
+    delete cntrIAUsuario;
+    delete stubISAutenticacao;
+    delete stubISUsuario;
     return 0;
 }

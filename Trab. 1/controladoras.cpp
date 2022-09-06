@@ -1,7 +1,10 @@
 #include "controladoras.h"
+#include "comandos.h"
 
 /* INICIO DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
-bool CntrIUAutenticacao::autenticar(Email *email){
+bool CntrIAAutenticacao::autenticar(Email *email){
+
+    bool resultado;
     Senha senha;
     string entrada;
 
@@ -27,8 +30,53 @@ bool CntrIUAutenticacao::autenticar(Email *email){
 
 //solicitando autenticacao
 
-bool resultado = cntrLNAutencicacao->autenticar(*email, senha);
-return resultado;
+    resultado = cntrISAutencicacao->autenticar(*email, senha);
+    return resultado;
 }
 
 /*    FIM DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
+
+void CntrIAUsuario::executar(const Email &email){
+
+    ComandoIAUsuario *comando;
+    int opcao;
+
+    while(true){
+        cout << endl << "Gerenciamento de Ususarios" << endl << endl;
+        cout << "Incluir   - " << INCLUIR << endl;
+        cout << "Remover   - " << REMOVER << endl;
+        cout << "Pesquisar - " << PESQUISAR << endl;
+        cout << "Editar    - " << EDITAR << endl;
+        cout << "Retornar  - " << RETONAR << endl << endl;
+        cout << "Selecione uma opcao:  ";
+        cin >> opcao;
+
+        switch (opcao)
+        {
+        case INCLUIR:
+            comando= new ComandoIAUsuarioIncluir();
+            comando->executar(CntrIAUsuario);
+            delete comando;
+            break;
+        case REMOVER:
+            comando= new ComandoIAUsuarioRemover();
+            comando->executar(CntrIAUsuario);
+            delete comando;
+            break;
+        case PESQUISAR:
+            comando= new ComandoIAUsuarioPesquisar();
+            comando->executar(CntrIAUsuario);
+            delete comando;
+            break;
+        case EDITAR:
+            comando= new ComandoIAUsuarioEditar();
+            comando->executar(CntrIAUsuario);
+            delete comando;
+            break;
+        }
+        if(opcao == RETORNAR){
+            break;
+        }
+    }
+    return;
+}
