@@ -36,7 +36,7 @@ bool CntrIAAutenticacao::autenticar(Email *email){
 
 /*    FIM DA IMPLEMENTACAO DE METODOS - AUTENTICACAO ##########################*/
 
-void CntrIAUsuario::executar(const Email &email){
+void CntrIAUsuario::executar(Email &email){
 
     ComandoIAUsuario *comando;
     int opcao;
@@ -47,30 +47,30 @@ void CntrIAUsuario::executar(const Email &email){
         cout << "Remover   - " << REMOVER << endl;
         cout << "Pesquisar - " << PESQUISAR << endl;
         cout << "Editar    - " << EDITAR << endl;
-        cout << "Retornar  - " << RETONAR << endl << endl;
+        cout << "Retornar  - " << RETORNAR << endl << endl;
         cout << "Selecione uma opcao:  ";
         cin >> opcao;
 
         switch (opcao)
         {
         case INCLUIR:
-            comando= new ComandoIAUsuarioIncluir();
-            comando->executar(CntrIAUsuario);
+            comando = new ComandoIAUsuarioIncluir();
+            comando->executar(cntrISUsuario);
             delete comando;
             break;
         case REMOVER:
-            comando= new ComandoIAUsuarioRemover();
-            comando->executar(CntrIAUsuario);
+            comando = new ComandoIAUsuarioRemover();
+            comando->executar(cntrISUsuario);
             delete comando;
             break;
         case PESQUISAR:
-            comando= new ComandoIAUsuarioPesquisar();
-            comando->executar(CntrIAUsuario);
+            comando = new ComandoIAUsuarioPesquisar();
+            comando->executar(cntrISUsuario);
             delete comando;
             break;
         case EDITAR:
-            comando= new ComandoIAUsuarioEditar();
-            comando->executar(CntrIAUsuario);
+            comando = new ComandoIAUsuarioEditar();
+            comando->executar(cntrISUsuario);
             delete comando;
             break;
         }

@@ -66,9 +66,12 @@
 	<string>
 	<stdexcept>
 
-1661122268 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\main.cpp
+1662511562 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\main.cpp
+	<stdexcept>
 	<iostream>
+	<string>
 	"dominios.h"
+	"entidades.h"
 	"interfaces.h"
 	"controladoras.h"
 	"stubs.h"
@@ -84,16 +87,17 @@
 1661814649 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\dominios.cpp
 	"dominios.h"
 
-1661122268 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.cpp
+1662511125 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.cpp
 	"controladoras.h"
+	"comandos.h"
 
-1661122268 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.h
+1662511106 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\controladoras.h
 	"interfaces.h"
 	"dominios.h"
 	<stdexcept>
 	<iostream>
 
-1662471453 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\interfaces.h
+1662511471 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\interfaces.h
 	"dominios.h"
 	"entidades.h"
 	<stdexcept>
@@ -101,7 +105,7 @@
 1661122268 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.cpp
 	"stubs.h"
 
-1661122268 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.h
+1662511716 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\stubs.h
 	"Interfaces.h"
 	<stdexcept>
 	<iostream>
@@ -110,7 +114,7 @@
 1662470440 source:c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\comandos.cpp
 	"comandos.h"
 
-1661854461 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\comandos.h
+1662511484 c:\users\danil\desktop\tp1-t2\tp1---trabalho-2\trab. 1\comandos.h
 	"interfaces.h"
 	"dominios.h"
 	"entidades.h"

@@ -14,8 +14,12 @@ class StubISAutenticacao:public ISAutenticacao{
 
 private:
     // Gatilhos de erros
+    /*
     const static int TRIGGER_FALHA = 67890;
     const static int TRIGGER_ERRO_SISTEMA = 78901;
+    */
+    string TRIGGER_FALHA = "67890";
+    string TRIGGER_ERRO_SISTEMA = "78901";
 
 public:
     //bool autenticar(const Email&, const Senha&);
@@ -29,8 +33,8 @@ class StubISUsuario:public ISUsuario{
 
 private:
     // Gatilhos de erros
-    const static int TRIGGER_FALHA = 67890;
-    const static int TRIGGER_ERRO_SISTEMA = 78901;
+    string TRIGGER_FALHA = "67890";
+    string TRIGGER_ERRO_SISTEMA = "78901";
 
 public:
     //bool autenticar(const Email&, const Senha&);

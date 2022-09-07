@@ -32,11 +32,11 @@ private:
 
     ISUsuario *cntrISUsuario;
 public:
-    void executar(const Email);
+    void executar(Email&);
     void setCntrISUsuario(ISUsuario *);
 };
 
-inline void CntrIAUsuario::setCntrISUsuario(ISUsuario *CntrIAUsuario){
+inline void CntrIAUsuario::setCntrISUsuario(ISUsuario *cntrIAUsuario){
     this->cntrISUsuario = cntrISUsuario;
 }
 

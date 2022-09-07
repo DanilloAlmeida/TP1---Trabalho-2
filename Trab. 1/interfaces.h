@@ -15,18 +15,29 @@ class ISUsuario;
 /* INICIO DE DECLARACAO DE INTERFACE - APRESENTACAO - AUTENTICACAO ############*/
 class IAAutenticacao{
 public:
+
+    bool autenticar (Email*);
+    void setCntrISAutenticacao (ISAutenticacao *);
+    ~IAAutenticacao(){}
+    /*
     virtual bool autenticar (Email*) = 0;
     virtual void setCntrISAutenticacao (ISAutenticacao *)    = 0;
     virtual ~IAAutenticacao(){}
+    */
 };
 /*    FIM DE DECLARACAO DE INTERFACE - APRESENTACAO - AUTENTICACAO ############*/
 
 /* INICIO DE DECLARACAO DE INTERFACE - APRESENTACAO - USUARIO #################*/
 class IAUsuario{
 public:
-    virtual bool executar (const Email&) = 0;
+    /*
+    virtual bool executar (Email&) = 0;
     virtual void setCntrISUsuario (ISUsuario *)    = 0;
     virtual ~IAUsuario(){}
+    */
+    bool executar (Email&);
+    void setCntrISUsuario (ISUsuario *);
+    ~IAUsuario(){}
 };
 /*    FIM DE DECLARACAO DE INTERFACE - APRESENTACAO - USUARIO #################*/
 

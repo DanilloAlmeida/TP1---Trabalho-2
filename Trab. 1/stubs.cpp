@@ -24,7 +24,7 @@ bool StubISAutenticacao::autenticar(Email &email, Senha &senha){
 
 /* INICIO DA IMPLEMENTACAO DE METODOS - USUARIO ###############################*/
 
-bool StubISUsuario::incluir(const Usuario &usuario){
+bool StubISUsuario::incluir(Usuario &usuario){
     cout << endl << "StubISUsuario::incluir" << endl;
 
     bool resultado = true;
@@ -39,7 +39,7 @@ bool StubISUsuario::incluir(const Usuario &usuario){
     return resultado;
 }
 /* ----------------------------------------------------------------------------*/
-bool StubISUsuario::remover(const Email &email){
+bool StubISUsuario::remover(Email &email){
     cout << endl << "StubISUsuario::email" << endl;
 
     bool resultado = true;

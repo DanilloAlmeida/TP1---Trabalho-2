@@ -13,8 +13,10 @@
 
 class ComandoIAUsuario{
 public:
-    virtual void executar(ISUsuario*) = 0;
-    virtual ~ComandoIAUsuario(){}
+    //virtual void executar(ISUsuario*) = 0;
+    //virtual ~ComandoIAUsuario(){}
+    void executar(ISUsuario*);
+    ~ComandoIAUsuario(){}
 };
 //--  INCLUIR  ------------------------------------------------------------------
 class ComandoIAUsuarioIncluir:public ComandoIAUsuario{

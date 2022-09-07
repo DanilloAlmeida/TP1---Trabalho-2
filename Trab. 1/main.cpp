@@ -23,17 +23,17 @@ using namespace std;
 
 int main()
 {
-    IAAutenticacao  *cntrIAAutenticacao;
-    IAUsuario       *cntrIAUsuario;
+    IAAutenticacao *cntrIAAutenticacao;
+    IAUsuario *cntrIAUsuario;
 
     cntrIAAutenticacao = new CntrIAAutenticacao();
-    cntrIAUsuario      = new CntrIAUsuario();
+    cntrIAUsuario = new CntrIAUsuario();
 
     ISAutenticacao *stubISAutenticacao;
     ISUsuario      *stubISUsuario;
 
     stubISAutenticacao = new StubISAutenticacao();
-    stubISUsuario      = new StubISUsuario();
+    stubISUsuario = new StubISUsuario();
 
     cntrIAAutenticacao->setCntrISAutenticacao(stubISAutenticacao);
     cntrIAUsuario->setCntrISUsuario(stubISUsuario);
@@ -64,7 +64,7 @@ int main()
     }
 
     try{
-        CntrIAUsuario->executar(email);
+        cntrIAUsuario->executar(email);
     }
     catch(const runtime_error &exp){
         cout << "Erro de sistema" << endl;
